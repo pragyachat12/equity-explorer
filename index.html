@@ -6,7 +6,7 @@
   <title>Stock Fundamentals — US Exchanges</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;600&family=Lora:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Fira+Code:wght@400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles/main.css" />
 </head>
 <body>
@@ -15,48 +15,24 @@
     <header class="header">
       <div class="header-left">
         <h1 class="site-title">Stock Fundamentals</h1>
-        <p class="site-sub">NYSE · NASDAQ · AMEX — sourced directly from SEC EDGAR filings</p>
+        <p class="site-sub">NYSE · NASDAQ · AMEX — sourced from SEC EDGAR filings</p>
       </div>
       <div class="header-right">
         <span class="status-badge" id="status-badge">connecting…</span>
-        <a class="macro-link" href="#" target="_blank">↗ macro dashboard</a>
-      </div>
-    </header>
+      </div>       
+   </header>
 
-    <div class="api-bar" style="display:none;"></div>
     <div class="error-bar" id="error-bar"></div>
 
     <div class="search-wrap">
-      <input type="text" id="search-input" class="search-input" placeholder="search by ticker or company name — e.g. AAPL, TSLA, JPM…" />
+      <input type="text" id="search-input" class="search-input" placeholder="search by ticker or company — e.g. AAPL, TSLA, JPM…" />
       <button id="search-btn">search</button>
       <div class="search-dropdown" id="search-dropdown"></div>
     </div>
 
-    <div class="tabs">
-      <button class="tab-btn active" data-tab="tab-lookup">company lookup</button>
-      <button class="tab-btn" data-tab="tab-screener">screener</button>
-    </div>
-
-    <div class="tab-panel active" id="tab-lookup">
-      <div id="company-panel">
-        <div class="empty-state">
-          search for a company above to pull its SEC EDGAR fundamentals
-        </div>
-      </div>
-    </div>
-
-    <div class="tab-panel" id="tab-screener">
-      <div class="screener-filters">
-        <div class="filter-group">
-          <label>sector</label>
-          <select id="sector-select"><option value="">all sectors</option></select>
-        </div>
-        <button id="screen-btn">run screener</button>
-      </div>
-      <div class="screener-table">
-        <div id="screener-body">
-          <div class="loading-msg">select a sector and run screener</div>
-        </div>
+    <div id="company-panel">
+      <div class="empty-state">
+        search for a company above to pull its SEC EDGAR fundamentals
       </div>
     </div>
 

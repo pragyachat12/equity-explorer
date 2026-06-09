@@ -5,10 +5,10 @@ export default defineConfig({
   build: { outDir: 'dist' },
   server: {
     proxy: {
-      '/sec': {
+      '/sec-facts': {
         target: 'https://data.sec.gov',
         changeOrigin: true,
-        rewrite: path => path.replace(/^\/sec/, ''),
+        rewrite: path => path.replace(/^\/sec-facts/, ''),
         headers: { 'User-Agent': 'stock-fundamentals-dashboard contact@example.com' }
       },
       '/sec-files': {
