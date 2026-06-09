@@ -50,12 +50,6 @@ stock-fundamentals/
 
 ---
 
-## Part of
-
-→ [US Market Fundamentals Dashboard](https://github.com/YOUR_USERNAME/usmarket_fundamentals) — macro layer (Fed, CPI, unemployment, S&P 500)
-
----
-
 ## Roadmap (v2)
 
 - [ ] Revenue + EPS historical charts per company
