@@ -23,7 +23,7 @@ Plus 5-year historical charts for Revenue, Net Income, and EPS.
 
 ---
 
-## Setup
+## How to Setup!
 
 **1. Clone the repo**
 ```bash
