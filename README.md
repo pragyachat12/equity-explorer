@@ -1,6 +1,6 @@
 # Stock Fundamentals Explorer
 
-An interactive dashboard for exploring full fundamentals for any company listed on NYSE, NASDAQ, or AMEX
+An interactive dashboard for exploring full fundamentals for any company listed on NYSE, NASDAQ, or AMEX.
 You can search by ticker or name, browse by sector, or screen by P/E range!
 
 Data sourced from:
