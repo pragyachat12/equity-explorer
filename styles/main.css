@@ -21,7 +21,7 @@ body {
   color: var(--text-primary);
   font-family: var(--font-sans);
   min-height: 100vh;
-  padding: 3rem 2rem 4rem;
+  padding: 4rem 2.5rem 5rem;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -41,17 +41,20 @@ body {
 
 .site-title {
   font-family: var(--font-serif);
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 900;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.8px;
+  text-transform: lowercase;
   color: var(--text-primary);
 }
 
 .site-sub {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--text-muted);
-  font-family: var(--font-mono);
-  margin-top: 5px;
+  font-family: var(--font-sans);
+  margin-top: 6px;
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
 .header-right {
@@ -331,13 +334,12 @@ button:active { opacity: 0.7; }
 
 /* ── Empty / loading ── */
 .empty-state {
-  padding: 3rem;
+  padding: 4rem 2rem;
   text-align: center;
   font-size: 13px;
   color: var(--text-muted);
   font-family: var(--font-mono);
-  border: 1px dashed var(--border-mid);
-  border-radius: 8px;
+  letter-spacing: 0.02em;
 }
 
 .loading-msg {

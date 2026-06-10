@@ -15,8 +15,7 @@ const compareBtn    = document.getElementById('compare-btn');
 const compareDrop   = document.getElementById('compare-dropdown');
 const clearCompare  = document.getElementById('clear-compare');
 
-statusBadge.textContent = 'sec edgar · no key needed';
-statusBadge.className = 'status-badge live';
+if (statusBadge) statusBadge.style.display = 'none';
 
 // state
 let primaryData = null;   // { fundamentals, price }

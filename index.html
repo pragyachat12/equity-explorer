@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stock Fundamentals — US Exchanges</title>
+  <title>stock fundamentals — US exchanges</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Fira+Code:wght@400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -14,24 +14,19 @@
 
     <header class="header">
       <div class="header-left">
-        <h1 class="site-title">Stock Fundamentals</h1>
-        <p class="site-sub">NYSE · NASDAQ · AMEX — sourced from SEC EDGAR filings</p>
-      </div>
-      <div class="header-right">
-        <span class="status-badge" id="status-badge">connecting…</span>
+        <h1 class="site-title">stock fundamentals</h1>
+        <p class="site-sub">NYSE · NASDAQ · AMEX — straight from SEC EDGAR 10-K filings</p>
       </div>
     </header>
 
     <div class="error-bar" id="error-bar"></div>
 
-    <!-- primary search -->
     <div class="search-wrap">
-      <input type="text" id="search-input" class="search-input" placeholder="search ticker or company — e.g. AAPL, TSLA, JPM…" />
+      <input type="text" id="search-input" class="search-input" placeholder="ticker or company name — AAPL, Tesla, JPMorgan…" />
       <button id="search-btn">search</button>
       <div class="search-dropdown" id="search-dropdown"></div>
     </div>
 
-    <!-- compare bar — hidden until a company is loaded -->
     <div class="compare-bar" id="compare-bar" style="display:none;">
       <span class="compare-bar-label">compare with →</span>
       <div class="search-wrap compare-search-wrap">
@@ -44,15 +39,14 @@
 
     <div id="company-panel">
       <div class="empty-state">
-        search for a company above to pull its SEC EDGAR fundamentals
+        type a ticker above — e.g. AAPL, MSFT, TSLA
       </div>
     </div>
 
     <footer class="footer">
       <div class="footer-left">
-        built by <a href="https://www.linkedin.com/in/pragya-chaturvedi" target="_blank" rel="noopener">Pragya Chaturvedi</a>
+        made by <a href="https://www.linkedin.com/in/pragya-chaturvedi" target="_blank" rel="noopener">Pragya</a>
         &nbsp;·&nbsp; data via <a href="https://www.sec.gov/edgar" target="_blank" rel="noopener">SEC EDGAR</a> &amp; Yahoo Finance
-        &nbsp;·&nbsp; v2 — no api key needed
       </div>
     </footer>
 
