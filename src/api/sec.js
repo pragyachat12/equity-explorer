@@ -1,5 +1,4 @@
-const SEC_FACTS = 'https://corsproxy.io/?https://data.sec.gov/api/xbrl/companyfacts';
-
+const SEC_FACTS = 'https://api.allorigins.win/raw?url=https://data.sec.gov/api/xbrl/companyfacts';
 import tickerData from '../data/tickers.json';
 
 let tickerMap = null;
