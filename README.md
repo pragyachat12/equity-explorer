@@ -7,21 +7,16 @@ Data sourced from:
 - [Financial Modeling Prep API](https://financialmodelingprep.com) — fundamentals
 - Yahoo Finance (via CORS proxy) — live price + delta
 
----
 
-**Data sourced from:**
+## Data Source
 - [SEC EDGAR](https://www.sec.gov/edgar) — revenue, net income, EPS, margins, debt/equity, ROE (from 10-K/10-Q filings)
 - Yahoo Finance (via proxy) — live price + day delta
-
----
 
 ## Metrics per company
 
 Market Cap · P/E · P/B · EPS · Revenue · Net Income · Gross Margin · Net Margin · Debt/Equity · ROE · Total Assets · Dividend Yield
 
 Plus 5-year historical charts for Revenue, Net Income, and EPS.
-
----
 
 ## How to Setup!
 
@@ -43,8 +38,6 @@ npm run dev
 
 Then open `http://localhost:5173/stock-fundamentals/` in your browser.
 
----
-
 ## Project structure
 
 ```
@@ -62,8 +55,4 @@ stock-fundamentals/
 └── styles/
     └── main.css
 ```
-
-## License
-
-MIT
 
