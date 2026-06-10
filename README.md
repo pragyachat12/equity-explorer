@@ -22,7 +22,7 @@ Plus 5-year historical charts for Revenue, Net Income, and EPS.
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/YOUR_USERNAME/stock-fundamentals.git
+git clone https://github.com/pragyachat12/stock-fundamentals.git
 cd stock-fundamentals
 ```
 
