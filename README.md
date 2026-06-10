@@ -3,6 +3,8 @@
 An interactive dashboard for exploring full fundamentals for any company listed on NYSE, NASDAQ, or AMEX.
 You can search by ticker or name, browse by sector, or screen by P/E range!
 
+**Live demo:** https://stock-fundamentals-kohl.vercel.app
+
 Data sourced from:
 - [Financial Modeling Prep API](https://financialmodelingprep.com) — fundamentals
 - Yahoo Finance (via CORS proxy) — live price + delta
