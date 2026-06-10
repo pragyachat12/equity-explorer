@@ -19,15 +19,27 @@
       </div>
       <div class="header-right">
         <span class="status-badge" id="status-badge">connecting…</span>
-      </div>       
-   </header>
+      </div>
+    </header>
 
     <div class="error-bar" id="error-bar"></div>
 
+    <!-- primary search -->
     <div class="search-wrap">
-      <input type="text" id="search-input" class="search-input" placeholder="search by ticker or company — e.g. AAPL, TSLA, JPM…" />
+      <input type="text" id="search-input" class="search-input" placeholder="search ticker or company — e.g. AAPL, TSLA, JPM…" />
       <button id="search-btn">search</button>
       <div class="search-dropdown" id="search-dropdown"></div>
+    </div>
+
+    <!-- compare bar — hidden until a company is loaded -->
+    <div class="compare-bar" id="compare-bar" style="display:none;">
+      <span class="compare-bar-label">compare with →</span>
+      <div class="search-wrap compare-search-wrap">
+        <input type="text" id="compare-input" class="search-input" placeholder="add a second ticker…" />
+        <button id="compare-btn">compare</button>
+        <div class="search-dropdown" id="compare-dropdown"></div>
+      </div>
+      <button class="clear-btn" id="clear-compare">✕ clear</button>
     </div>
 
     <div id="company-panel">

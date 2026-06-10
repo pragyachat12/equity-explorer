@@ -372,3 +372,141 @@ button:active { opacity: 0.7; }
 }
 
 .footer-left a:hover { color: var(--text-primary); }
+
+/* ── Compare bar ── */
+.compare-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.compare-bar-label {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.compare-search-wrap {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 0 !important;
+}
+
+.clear-btn {
+  font-size: 11px;
+  padding: 8px 12px;
+  color: var(--text-muted);
+  border-color: var(--border);
+}
+
+/* ── Compare card ── */
+.compare-card {
+  background: var(--surface-raised);
+  border: 1px solid var(--border-mid);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.compare-header {
+  display: grid;
+  grid-template-columns: 1fr 40px 1fr;
+  align-items: start;
+  padding: 22px;
+  border-bottom: 1px solid var(--border);
+  gap: 12px;
+}
+
+.compare-company { display: flex; flex-direction: column; }
+
+.compare-vs {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  text-align: center;
+  padding-top: 6px;
+}
+
+.compare-rows {
+  border-bottom: 1px solid var(--border);
+}
+
+.compare-row {
+  display: grid;
+  grid-template-columns: 1fr 140px 1fr;
+  align-items: center;
+  padding: 10px 22px;
+  border-bottom: 1px solid var(--border);
+  gap: 8px;
+}
+
+.compare-row:last-child { border-bottom: none; }
+.compare-row:hover { background: var(--surface); }
+
+.compare-label {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  text-align: center;
+}
+
+.compare-val {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.compare-val:last-child { text-align: right; }
+
+.compare-val.win { color: var(--green); }
+.compare-val.lose { color: var(--red); }
+
+.compare-charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border-top: 1px solid var(--border-mid);
+}
+
+/* ── Card actions ── */
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 22px;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.sec-link {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.compare-legend {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.win-dot, .lose-dot {
+  display: inline-block;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+}
+
+.win-dot { background: var(--green); }
+.lose-dot { background: var(--red); }
