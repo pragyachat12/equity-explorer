@@ -1,15 +1,13 @@
 const SEC_FACTS = 'https://corsproxy.io/?https://data.sec.gov/api/xbrl/companyfacts';
-const SEC_TICKERS = 'https://corsproxy.io/?https://www.sec.gov/files/company_tickers.json';
+
+import tickerData from '../data/tickers.json';
 
 let tickerMap = null;
 
 async function loadTickerMap() {
   if (tickerMap) return tickerMap;
-  const res = await fetch(SEC_TICKERS);
-  if (!res.ok) throw new Error('Could not load SEC ticker list');
-  const json = await res.json();
   tickerMap = {};
-  Object.values(json).forEach(({ ticker, cik_str, title }) => {
+  Object.values(tickerData).forEach(({ ticker, cik_str, title }) => {
     tickerMap[ticker.toUpperCase()] = {
       cik: String(cik_str).padStart(10, '0'),
       name: title,
