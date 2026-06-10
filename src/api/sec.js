@@ -1,4 +1,4 @@
-const SEC_FACTS = 'https://api.allorigins.win/raw?url=https://data.sec.gov/api/xbrl/companyfacts';
+const SEC_FACTS = 'https://stock-fundamentals-kohl.vercel.app/api/sec-facts';
 import tickerData from '../data/tickers.json';
 
 let tickerMap = null;
@@ -84,7 +84,7 @@ function annualHistory(facts, concept, n = 5) {
 
 export async function getSecFundamentals(ticker) {
   const cik = await getCIK(ticker);
-  const url = `${SEC_FACTS}/CIK${cik}.json`;
+  const url = `${SEC_FACTS}?cik=${cik}`;
   const res = await fetch(url);
   if (!res.ok) throw new Error(`SEC EDGAR HTTP ${res.status}`);
   const json = await res.json();
