@@ -1,9 +1,5 @@
-const PROXY = 'https://corsproxy.io/?';
-const YAHOO = 'https://query1.finance.yahoo.com/v8/finance/chart';
-
 export async function fetchPrice(ticker) {
-  const url = `${YAHOO}/${ticker}?interval=1d&range=5d`;
-  const res = await fetch(PROXY + encodeURIComponent(url));
+  const res = await fetch(`/api/yahoo-price?ticker=${ticker}`);
   if (!res.ok) throw new Error(`Yahoo HTTP ${res.status}`);
   const json = await res.json();
   const result = json?.chart?.result?.[0];
