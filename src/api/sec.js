@@ -1,5 +1,5 @@
-const SEC_FACTS = '/sec-facts/api/xbrl/companyfacts';
-const SEC_TICKERS = '/sec-files/files/company_tickers.json';
+const SEC_FACTS = 'https://corsproxy.io/?https://data.sec.gov/api/xbrl/companyfacts';
+const SEC_TICKERS = 'https://corsproxy.io/?https://www.sec.gov/files/company_tickers.json';
 
 let tickerMap = null;
 
